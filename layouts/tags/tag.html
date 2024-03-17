@@ -17,7 +17,7 @@
             </div>
         {{ end }}
         
-        <section class="grid-list">
+        <section class="grid-list justify-items-center pl-0">
             {{ $taggedPages := (index .Site.Taxonomies.tags (anchorize .Title)).Pages }}
             {{ range $taggedPages }}
                 {{ partial "card" (dict "context" .) }}

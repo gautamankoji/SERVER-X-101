@@ -11,13 +11,11 @@
 
         <div class="mx-auto w-auto h-[2px] my-12 bg-gradient-to-r from-peach3 to-peach1 rounded-full"></div>
 
-
-        {{ range .Pages }}
+            {{ range .Pages }}
             <span class="inline-block p-2 items-center justify-evenly">
                 <a href="{{.Permalink | relURL }}"><span class="tag tag-{{anchorize .Title}} tag-lg hover:scale-110 transition-all duration-300">#{{ anchorize .Title}}</span></a>
             </span>
-
-        {{ end }}
+                        {{ end }}
     </main>
 {{ end }}
 
