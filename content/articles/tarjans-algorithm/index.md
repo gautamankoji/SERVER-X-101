@@ -32,7 +32,7 @@ using namespace std;
 class Graph {
     int V;
     list<int> *adj;
-    void SCCUtil(int u, int disc[], int low[], stack<int> *st, bool stackMember[]); hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+    void SCCUtil(int u, int disc[], int low[], stack<int> *st, bool stackMember[]);
 
   public:
     Graph(int V);
