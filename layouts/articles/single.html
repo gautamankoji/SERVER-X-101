@@ -1,0 +1,83 @@
+{{ define "header" }}
+{{ partial "topnav" }}
+{{ end }}
+
+{{ define "main" }}
+<main class="container">
+
+
+	<div class="flex w-full justify-between">
+
+
+		<article itemscope itemtype="http://schema.org/Article" class="w-full">
+			<meta itemprop="datePublished" content="{{ .PublishDate }}" />
+			<meta itemprop="dateModified" content="{{ .Lastmod }}" />
+			<meta itemprop="image" content="img/featured.png" />
+			<meta itemprop="publisher" content="gautam ankoji" />
+
+
+			<header>
+				<div class="bg-gray8 py-5 px-3 rounded-full mb-20 flex justify-between mt-3">
+
+					{{ $author := .Site.GetPage (print "/authors/"  (anchorize .Params.Author)) }}
+					{{ $authorImg := (print "/authors/img/"  (anchorize .Params.Author) ".jpg") }}
+					<a class="flex items-center no-underline" itemprop="author" name="{{ .Params.author }}" href="/authors/{{ anchorize .Params.author }}/">
+						<img class="w-10 h-10 rounded-full block" src="{{ $authorImg }}" alt="{{ $author.Title }} avatar">
+						<span class="flex flex-col ml-2">
+							<span class="no-underline">By {{ title .Params.author }}</span>
+							<span class="text-xs text-gray4">Posted <time itemprop="dateModified">{{ .Lastmod.Format "Jan 2, 2006"}}</time>
+						</span>
+	
+					</a>
+
+					<!-- Tags -->
+					<span class="flex items-center justify-content ">
+						{{ range .Params.tags }}
+							<a href="/tags/{{ . }}"><span class="tag tag-{{ . }} font-bold hover:scale-110 transition-all duration-300 ">#{{ . }}</span></a>
+						{{ end }}
+
+						{{ with .Params.github }}
+							<a class="btn btn-transparent ml-4" href="{{ . }}">
+								Github
+							</a>
+						{{ end }}
+					</span>
+					
+				
+				</div>
+
+			</header>
+
+
+
+			<!-- Article content -->
+			<section class="prose dark:prose-invert max-w-full lesson-content ancor-blue" itemprop="articleBody">
+
+				<h1 itemprop="name headline" id="{{ anchorize .Title }}" class="gradient-text">
+					{{ .Title }}
+				</h1>
+
+
+				{{ .Content }}
+
+				
+			</section>
+
+
+		</article>
+		<!-- TOC fixed sidebar -->
+		{{ if not .Params.disable_toc }}
+		<aside class="tableOfContents">
+			{{ .TableOfContents }}
+		</aside>
+		{{ end }}
+	</div>
+
+
+</main>
+{{ end }}
+
+
+{{ define "footer" }}
+{{ partial "footer" }}
+{{ end }}

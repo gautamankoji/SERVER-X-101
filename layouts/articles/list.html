@@ -1,0 +1,32 @@
+{{ define "header" }}
+  {{ partial "topnav" }}
+{{ end }}
+{{ define "main" }}
+  <main class="prose dark:prose-invert container">
+
+    <header class="text-left mb-8 mt-20 pl-4 inset-0">
+      <h1 class="text-5xl mb-1">Articles</h1>
+      <p class="my-0 text-gray3">Explore diverse and insightful articles.</p>
+    </header>
+
+    <div class="mx-auto w-auto h-[2px] my-12 bg-gradient-to-r from-peach3 to-peach1 rounded-full"></div>
+
+    <ul class="grid-list justify-items-center pl-0">
+      {{ $paginator := .Paginate (where .Pages "Type" "articles") 20 }}
+
+      {{ range $paginator.Pages }}
+
+        <li class="list-none p-0">
+          {{ partial "card" (dict "context" .) }}
+        </li>  
+      {{ end }}
+    </ul>
+
+    {{ template "_internal/pagination.html" . }}
+
+  </main>
+{{ end }}
+
+{{ define "footer" }}
+	{{ partial "footer" }}
+{{ end }}
