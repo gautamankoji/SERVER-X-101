@@ -6,7 +6,7 @@ lastmod: 2024-02-27T08:36:36-07:00
 tags:
     - dsa
     - programming
-github: https://github.com
+github: https://github.com/server-x-101/dsa-mastery
 ---
 
 <div class="box box-green">
