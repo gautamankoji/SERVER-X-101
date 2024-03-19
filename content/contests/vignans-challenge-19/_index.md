@@ -13,8 +13,6 @@ author: Gautam Ankoji
 
 #### Topic: Tech Mahindra Coding Test
 
-</br>
-
 <p class="drop-cap">
 Hello, second-year students of Vignan! 🎓
 </p>
@@ -23,4 +21,4 @@ The Eighteenth challenge (Vignan_Challenge_19) will be conducted from 25 Februar
 
 Please participate using the following link(Contest Closed): <a href="https://p.hck.re/XoUB" >Vignan Challenge 19 Link</a>
 
-###### Timing: 25th Feb (2:00 PM) to 25th Feb (4:30 PM)
+##### Timing: 25th Feb (2:00 PM) to 25th Feb (4:30 PM)
