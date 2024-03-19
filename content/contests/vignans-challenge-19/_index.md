@@ -11,12 +11,13 @@ tags:
 author: Gautam Ankoji
 ---
 
+#### Topic: Tech Mahindra Coding Test
 
-## 📝 Vignan Challenge #19
+</br>
 
-##### Topic: Tech Mahindra Coding Test
-
+<p class="drop-cap">
 Hello, second-year students of Vignan! 🎓
+</p>
 
 The Eighteenth challenge (Vignan_Challenge_19) will be conducted from 25 February (2:00 PM) to 25 February (4:30 PM) (2.5 hours). The questions are drawn from real company interviews. You are given 9 questions and 2.5 hours to complete them. When you start coding, please provide your Roll No instead of your Name. For every wrong submission, 10 minutes will be deducted from the time (Leetecode format), so be conscious before submitting the code.
 

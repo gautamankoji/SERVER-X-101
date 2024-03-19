@@ -8,7 +8,9 @@ tags:
     - prime-numbers
 ---
 
+<p class="drop-cap">
 The Sieve of Eratosthenes is an ancient algorithm used to find all prime numbers up to a specified integer. It works by iteratively marking the multiples of each prime number starting from 2 as composite (not prime). After iterating through all numbers up to the square root of the limit, the remaining unmarked numbers are primes.
+</p>
 
 ### Python Implementation
 

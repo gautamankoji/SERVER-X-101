@@ -66,3 +66,13 @@ quiz-modal {
       @apply text-white font-sans font-bold;
   }
 }
+
+.drop-cap:first-letter {
+  float: left;
+  font-size: 4rem;
+  line-height: 0.6;
+  padding-right: 0.1em;
+  font-family: 'Style Script', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}

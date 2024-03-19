@@ -9,7 +9,9 @@ tags:
 
 ---
 
+<p class="drop-cap">
 Welcome to the exciting realm of Three.js - a dynamic JavaScript library empowering developers to craft mesmerizing 3D graphics for the web effortlessly. Whether you're taking your first steps or you're an experienced hand, Three.js offers a myriad of tools and resources to unleash your creativity and bring your visions to life.
+</p>
 
 ## Core Resources
 

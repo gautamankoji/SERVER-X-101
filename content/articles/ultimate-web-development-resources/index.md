@@ -10,7 +10,9 @@ tags:
 
 ---
 
+<p class="drop-cap">
 A collection of Web Developement Resources at one place
+</p>
 
 ## Table of Contents
 
